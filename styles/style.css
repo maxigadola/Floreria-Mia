@@ -49,9 +49,24 @@ font-family:"DM Sans", sans-serif;
 }
 .img-Logo{
     height: 60px;
-    width:100% ;
+    width:60px ;
     object-fit: cover;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; 
+    border-radius: 10%;
+}
+footer{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#F7A8B8;
+    border-top: 1px solid #121212
+}
+.p-copyright{
+    color: #121212;
+    margin: 10px;
+    text-align: center;
 }
