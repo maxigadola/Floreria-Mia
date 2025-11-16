@@ -1,0 +1,57 @@
+/* fonts Lora*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* font-family: "DM Sans", sans-serif; */
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+font-family:"DM Sans", sans-serif;
+} 
+
+.container-fluid{
+    background-color: #fe085adb;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    padding: 0 !important;
+}
+.containerNav{
+    display: flex !important;
+    justify-content:end!important ;
+}
+.pagesNav{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+@media (max-width: 992px) {
+    .containerNav{
+    justify-content:center !important;
+    text-align: center;
+}
+    .minav{
+        display: flex;
+        justify-content: center;
+    }
+}
+.navbar-brand{
+    display: flex !important;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+    margin: 0 !important;
+    padding: 0;
+
+}
+.img-Logo{
+    height: 60px;
+    width:100% ;
+    object-fit: cover;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+}
