@@ -28,6 +28,32 @@
         </nav>
     </header>
     <main>
+        <section class="inicioHacerMiPedido">
+            <h1>Tu Ramo Ideal, Preparado Con Amor</h1>
+            <p>Hacé tu pedido de flores en minutos</p>
+            <img src="https://placehold.co/900x300?text=imagenDeFondo"alt="imagenDeFondo">
+        </section>
+        <section class="DetallesDelPedido">
+            <h2>Detalles del Pedido</h2>
+            <form class="formPedido" action="/submit" method="post" >
+                <label for="nombreCliente">Nombre y Apellido</label>
+                <input type="text" name="Nombre" id="nombreCliente">
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono">
+                <label for="FechaDeEntrega">Fecha de Entrega</label>
+                <input type="date" name="Fecha" id="FechaDeEntrega">
+                <label for="metodoDePago">Elige el Método de Pago</label>
+                <select name="opcionesDePago" id="metodoDePago">
+                    <option value="efectivo">Pago Efectivo</option>
+                    <option value="Transferencia">Mercado Pago</option>
+                    <option value="tarjeta">Tarjeta de Débito o Crédito</option>
+                </select>
+                <label for="mensajeEspecial">Contanos la ocasión o el mensaje que querés incluir.</label>
+                <textarea name="mensaje" id="mensajeEspecial" placeholder="Deja tu mensaje y nosotros nos encargamos del resto.">
+                </textarea>
+                <input type="submit" value="Hacer Mi pedido">
+            </form>
+        </section>
     </main>
     <footer>
         <!-- logo -->
