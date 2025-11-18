@@ -1,6 +1,9 @@
 /* fonts Lora*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* font-family: "DM Sans", sans-serif; */
+/* font Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ /* font-family: "Playfair Display", serif; */
 *{
     margin:0;
     padding: 0;
@@ -8,7 +11,9 @@
 body {
 font-family:"DM Sans", sans-serif;
 } 
-
+main{
+    background: #FFF5FA;;
+}
 .container-fluid{
     background-color: #fe085adb;
     padding: 0;
@@ -69,4 +74,46 @@ footer{
     color: #121212;
     margin: 10px;
     text-align: center;
+}
+
+
+h2{
+    padding:10px;
+    margin: 10px;
+}
+h1,h2{
+    color:#fe085adb;
+    text-align: center;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    background: url(https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:bottom;
+    background-attachment: fixed;        
+    background-repeat: no-repeat;
+    
+}
+.titleHomePage{
+    font-size: 50px;
+    padding: 0;
+    margin: 5px;
+}
+.subtituloHomePage {
+    font-size:25px;
+    text-align: center;
+    padding: 10px 0;
+    margin:0px 0;
+}
+
+
+
+.catalogo{
+    display: flex;
+    gap:80px;
+    flex-direction: row;
+    justify-content: center;
 }
