@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Florería Mia</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg  miNav">
             <div class="container-fluid">
-                <a class="navbar-brand logoNav" href="../index.html"><img src="../assets/logo floreria.png" class="img-Logo" alt="logo de Floreria"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand logoNav" href="../index.html"><img src="../assets/logo floreria.png"
+                        class="img-Logo" alt="logo de Floreria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse containerNav colorNav " id="navbarNavAltMarkup">
@@ -28,43 +34,72 @@
         </nav>
     </header>
     <main>
-        <h1>Contactos</h1>
         <section class="Infocontactos">
-            <img src="https://placehold.co/40x40?text=icono" alt="logoWhatsApp">
-            <p>+54261343678</p>
-            <img src="https://placehold.co/40x40?text=icono" alt="logoInstagram">
-            <p>@floreriaMia</p>
-            <img src="https://placehold.co/40x40?text=icono" alt="logoFacebook">
-            <p>floreria Mia</p>
-            <img src="https://placehold.co/40x40?text=icono" alt="logoLlamada">
-            <p>2612413830</p>
-            <img src="https://placehold.co/350x350?text=imgDeFlores" alt="imgFlores">
+            <div class="contacto-contenedor">
+                <div class="columna-contactos">
+                    <h1>Contactos</h1>
+                    <div class="ConteinerDatos">
+                        <img class="icon"
+                            src="https://images.icon-icons.com/840/PNG/512/Whatsapp_icon-icons.com_66931.png"
+                            alt="logoWhatsApp">
+                        <p class="datosContactos">+54261343678</p>
+                    </div>
+                    <div class="ConteinerDatos">
+                        <img class="icon"
+                            src="https://images.icon-icons.com/836/PNG/512/Instagram_icon-icons.com_66804.png"
+                            alt="logoInstagram">
+                        <p class="datosContactos">@floreriaMia</p>
+                    </div>
+                    <div class="ConteinerDatos">
+                        <img class="icon" src="https://images.icon-icons.com/2429/PNG/512/facebook_logo_icon_147291.png"
+                            alt="logoFacebook">
+                        <p class="datosContactos">floreria Mia</p>
+                    </div>
+                    <div class="ConteinerDatos">
+                        <img class="icon"
+                            src="https://images.icon-icons.com/1130/PNG/512/calltelephoneauricularincircularbutton_80086.png"
+                            alt="logoLlamada">
+                        <p class="datosContactos">2612413830</p>
+                    </div>
+                </div>
+                <div class=".columna-imagen">
+                    <img class="img-contactos-decoracion" src="../assets/florBlanca.jpeg" alt="imgFlores">
+                </div>
+            </div>
+            <section class="ubicacion">
+                <h2 class="ubicacionTitle">Ubicación</h2>
+                <img class="icon" src="../assets/mapas-de-google.png" alt="iconoDeUbicacion">
+                <img src="https://placehold.co/350x350?text=Maps" alt="UbicacionMapa">
+                <a href="https://www.google.com/maps">R.Escalada de San Martín 2021,M5500,Mendoza.</a>
+            </section>
         </section>
-        
-        <section class="UbicacionFloreria">
-            <h2>Ubicación</h2>
-            <img src="https://placehold.co/350x350?text=Maps" alt="UbicacionMapa">
-            <img src="https://placehold.co/60x60?text=iconoUbicacion" alt="iconoDeUbicacion">
-            <p><a href="https://www.google.com/maps">R.Escalada de San Martín 2021,M5500,Mendoza.</a></p>
-        </section>
-        <form action="/sumbit" method="post">
+        <form class="form-consultas" action="/sumbit" method="post">
             <h2>Consultas</h2>
-            <label for="nombreConsulta">Nombre</label>
-            <input type="text" name="nombre"id="nombreConsulta">
-            <label for="email">Correo Electronico</label>
-            <input type="email" name="email" id="email">
-            <label for="telefono">Telefono</label>
-            <input type="text"name="numeroDeTelefono" id="telefono">
-            <label for="ConsultaDelCliente">Consulta</label>
-            <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
-            <input class="boton" type="submit" value="Enviar Consulta">
+            <div class="ConteinerDatos">
+                <label class="label-contacto" for="nombreConsulta">Nombre</label>
+                <input type="text" name="nombre" id="nombreConsulta">
+            </div>
+            <div class="ConteinerDatos">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="ConteinerDatos">
+                    <label for="ConsultaDelCliente">Consulta</label>
+                    <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
+            </div>
+                <input class="botonPedido" type="submit" value="Enviar Consulta">
+            
         </form>
+        </section>
     </main>
     <footer>
         <!-- logo -->
         <img src="../assets/logo floreria.png" class="img-Logo" alt="Logo Floreria Mia">
         <p class="p-copyright">© Copyright 2025. Todos los Derechos Reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
