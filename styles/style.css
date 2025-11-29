@@ -1,304 +1,51 @@
-/* fonts Lora*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-/* font-family: "DM Sans", sans-serif; */
-/* font Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-/* font-family: "Playfair Display", serif; */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    font-family: "DM Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    background: #fff6fb;
-}
-
-.container-fluid {
-    background-color: #fe085adb;
+@media (min-width: 992px) {
+  header {
     padding: 0;
     margin: 0;
-}
-
-.navbar {
+  }
+  header nav {
     padding: 0 !important;
-}
-
-.containerNav {
-    display: flex !important;
-    justify-content: end !important;
-}
-
-.pagesNav {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    padding: 8px 0;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.navbar-brand {
-    display: flex !important;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    margin: 0 !important;
-    padding: 0;
-
-}
-
-.img-Logo {
-    height: 60px;
-    width: 60px;
-    object-fit: cover;
+  }
+  header nav .minav {
     display: flex;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    border-radius: 10%;
+    justify-content: space-between;
+  }
+  header nav .navbar-propia {
+    flex-grow: 0 !important;
+    flex-basis: auto !important;
+  }
+}
+header nav {
+  padding: 0 !important;
+}
+header nav .minav {
+  background-color: rgba(254, 8, 90, 0.8588235294) !important;
+}
+header nav .minav a {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+header nav .minav a .img-logo {
+  height: 50px;
+  width: 50px;
+}
+header nav .minav div ul li a {
+  color: white;
+}
+header nav .minav div ul li a:hover {
+  color: #9f46ff;
+}
+header nav .minav div ul li .active {
+  color: white !important;
+}
+header nav .minav div ul li .active:hover {
+  color: #9f46ff;
 }
 
-footer {
-    height: 100px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F7A8B8;
-    border-top: 1px solid #121212
-}
-
-.p-copyright {
-    color: #121212;
-    margin: 10px;
-    text-align: center;
-}
-
-h2 {
-    padding: 10px;
-    margin: 30px;
-}
-
-h1,
-h2 {
-    color: #fe085adb;
-    text-align: center;
-}
-
-.titleCatalogo {
-    font-size: 50px;
-    margin-top: 50px;
-}
-
-.homePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-    background: url(https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-}
-
-.titleHomePage {
-    font-size: 50px;
-    padding: 0;
-    margin: 5px;
-}
-
-.subtituloHomePage {
-    font-size: 2rem;
-    color: #df3a79;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0px 0;
-}
-
-.card {
-    border: none;
-    border-radius: 18px;
-    background: linear-gradient(to bottom,
-            #ff578f 15%,
-            #ffffff 100%);
-    margin: 30px 30px;
-    width: 20rem;
-    height: 38rem;
-}
-
-.card-img {
-    border: none;
-    border-radius: 18px 18px 0 0;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 25px;
-    color: #000000;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-}
-
-.card-text {
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-    color: black;
-}
-
-.card-body {
-    border: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.btn-primary {
-    background-color: #ff578f;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 22px;
-    color: #ffffff;
-    display: block;
-    margin: 0 auto;
-}
-
-.catalogo {
-    display: flex;
-    gap: 80px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.ComprasBoton {
-    text-align: center;
-    margin: 30px;
-}
-
-.botonPedido {
-    display: inline-block;
-    background-color: #6c5ce7;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    margin: 10px;
-}
-
-.ubicacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 50px;
-}
-
-.ubicacionTitle {
-    margin: 5px 0;
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
-
-/* media page principal */
-@media (max-width: 992px) {
-    .containerNav {
-        justify-content: center !important;
-        text-align: center;
-    }
-
-    .minav {
-        display: flex;
-        justify-content: center;
-    }
-
-    .catalogo {
-        gap: 0;
-    }
-}
-
-/* Contacto page */
-
-.Infocontactos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.contacto-contenedor {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.columna-contactos,
-.columna-imagen {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
-.ConteinerDatos {
-    display: flex;
-    flex-direction:row;
-    gap: 20px;
-    margin: 25px;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-contactos-decoracion {
-    width: 500px;
-    height: 500px;
-    border-radius: 8px;
-    border: none;
-    background-color: #ffffff;
-}
-
-.datosContactos {
-    margin: 20px;
-}
-
-.form-consultas {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-form label,form input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*# sourceMappingURL=style.css.map */

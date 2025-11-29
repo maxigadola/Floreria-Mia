@@ -12,23 +12,32 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  miNav">
-            <div class="container-fluid">
-                <a class="navbar-brand logoNav" href="../index.html"><img src="../assets/logo floreria.png"
-                        class="img-Logo" alt="logo de Floreria"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid minav">
+                <a class="navbar-brand" href="../index.html"><img src="./assets/logo_floreria.png" class="img-logo"
+                        alt="Logo de la Floreria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse containerNav colorNav " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link  pagesNav" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link pagesNav" href="./contactos.html">Contactos</a>
-                        <a class="nav-link pagesNav" href="./quienesSomos.html">Quienes Somos</a>
-                        <a class="nav-link pagesNav active" href="#">Productos</a>
-                        <a class="nav-link pagesNav" href="./hacerMiPedido.html">Hacer Mi Pedido</a>
-                    </div>
+                <div class="collapse navbar-collapse navbar-propia" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="./hacerMiPedido.html">Hacer Mi Pedido</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

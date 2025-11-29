@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
@@ -12,24 +13,33 @@
 </head>
 
 <body>
-    <header class="headerColor">
-        <nav class="navbar navbar-expand-lg  miNav">
-            <div class="container-fluid">
-                <a class="navbar-brand logoNav" href="#"><img src="./assets/logo floreria.png" class="img-Logo"
-                        alt="logo de Floreria"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid minav">
+                <a class="navbar-brand" href="#"><img src="./assets/logo_floreria.png" class="img-logo"
+                        alt="Logo de la Floreria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse containerNav colorNav " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link  pagesNav active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link pagesNav" href="./pages/contactos.html">Contactos</a>
-                        <a class="nav-link pagesNav" href="./pages/quienesSomos.html">Quienes Somos</a>
-                        <a class="nav-link pagesNav" href="./pages/productos.html">Productos</a>
-                        <a class="nav-link pagesNav" href="./pages/hacerMiPedido.html">Hacer Mi Pedido</a>
-                    </div>
+                <div class="collapse navbar-collapse navbar-propia" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="./pages/hacerMiPedido.html">Hacer Mi Pedido</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -37,31 +47,37 @@
     <main>
         <section class="homePage">
             <h1 class="titleHomePage">¡Bienvenidos a Florería Mia!</h1>
-            <h3 class="subtituloHomePage"> Donde Transformamos Sentimientos en Flores y Flores en Momentos Inolvidables.</h3>
+            <h3 class="subtituloHomePage"> Donde Transformamos Sentimientos en Flores y Flores en Momentos Inolvidables.
+            </h3>
         </section>
         <h2 class="titleCatalogo">Diseños Personalizados Para Cada Ocasión</h2>
         <section class="catalogo">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1706741919760-1973851ca4b7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top card-img" alt="Ramos de Flores">
+                <img src="https://images.unsplash.com/photo-1706741919760-1973851ca4b7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top card-img" alt="Ramos de Flores">
                 <div class="card-body">
                     <h5 class="card-title">Sí, Acepto</h5>
-                    <p class="card-text">Flores que celebran la unión de dos almas libres, que eligieron caminar juntas y hacer del amor su hogar</p>
-                    <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
-                </div>
-            </div>
-            <div class="card" >
-                <img src="./assets/ramo de regalos.jpeg" class="card-img-top card-img" alt="Ramos de regalo">
-                <div class="card-body">
-                    <h5 class="card-title">Celebrar la vida</h5>
-                    <p class="card-text">Un ramo que dice: ¡Hoy es tu día!. Colores frescos y vibrantes para regalar alegría y buenos deseos.</p>
+                    <p class="card-text">Flores que celebran la unión de dos almas libres, que eligieron caminar juntas
+                        y hacer del amor su hogar</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
             <div class="card">
-                <img src="./assets/centro de mesa cumpleaños.jfif" class="card-img-top card-img" alt="Decoracion de altar">
+                <img src="./assets/ramo de regalos.jpeg" class="card-img-top card-img" alt="Ramos de regalo">
+                <div class="card-body">
+                    <h5 class="card-title">Celebrar la vida</h5>
+                    <p class="card-text">Un ramo que dice: ¡Hoy es tu día!. Colores frescos y vibrantes para regalar
+                        alegría y buenos deseos.</p>
+                    <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/centro de mesa cumpleaños.jfif" class="card-img-top card-img"
+                    alt="Decoracion de altar">
                 <div class="card-body">
                     <h5 class="card-title">Ambientes que florecen</h5>
-                    <p class="card-text">Creamos espacios llenos de vida. Flores y detalles únicos para transformar cualquier lugar en un momento inolvidable.</p>
+                    <p class="card-text">Creamos espacios llenos de vida. Flores y detalles únicos para transformar
+                        cualquier lugar en un momento inolvidable.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Decoraciones</a>
                 </div>
             </div>
@@ -71,60 +87,67 @@
                 <img src="./assets/san valentin.png" class="card-img-top card-img" alt="Ramos de San Valentin">
                 <div class="card-body">
                     <h5 class="card-title">Amor que florece</h5>
-                    <p class="card-text">Un ramo pensado para decir te elijo hoy y siempre. Colores vibrantes y aromas que hablan por vos cuando las palabras no alcanzan.</p>
+                    <p class="card-text">Un ramo pensado para decir te elijo hoy y siempre. Colores vibrantes y aromas
+                        que hablan por vos cuando las palabras no alcanzan.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
-            <div class="card" >
-                <img src="./assets/aniversario.png" class="card-img-top card-img" alt="Familia festejando el aniversario de casamiento">
+            <div class="card">
+                <img src="./assets/aniversario.png" class="card-img-top card-img"
+                    alt="Familia festejando el aniversario de casamiento">
                 <div class="card-body">
                     <h5 class="card-title">Celebrar el amor</h5>
-                    <p class="card-text">Cada año juntos merece un detalle único. Flores que cuentan su historia y renuevan la magia de estar acompañados.</p>
+                    <p class="card-text">Cada año juntos merece un detalle único. Flores que cuentan su historia y
+                        renuevan la magia de estar acompañados.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card">
                 <img src="https://placehold.co/300x300?text=Ramos" class="card-img-top card-img" alt="Ramos de Flores">
                 <div class="card-body">
                     <h5 class="card-title">Flores Amarillas – Día del Amigo / Amor y Amistad</h5>
-                    <p class="card-text">El color del cariño sincero. Un regalo que ilumina el día y festeja los vínculos que nos hacen bien.</p>
+                    <p class="card-text">El color del cariño sincero. Un regalo que ilumina el día y festeja los
+                        vínculos que nos hacen bien.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
         </section>
         <section class="catalogo">
-            <div class="card" >
+            <div class="card">
                 <img src="https://placehold.co/300x300?text=Ramos" class="card-img-top card-img" alt="Ramos de Flores">
                 <div class="card-body">
                     <h5 class="card-title">Rosas Eternas</h5>
-                    <p class="card-text">Elegancia y pasión en cada pétalo. El clásico que nunca falla para expresar amor profundo e inolvidable.</p>
+                    <p class="card-text">Elegancia y pasión en cada pétalo. El clásico que nunca falla para expresar
+                        amor profundo e inolvidable.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card">
                 <img src="https://placehold.co/300x300?text=Ramos" class="card-img-top card-img" alt="Ramos de Flores">
                 <div class="card-body">
                     <h5 class="card-title">Logros que florecen</h5>
-                    <p class="card-text">Un detalle para celebrar el esfuerzo y los sueños cumplidos. Flores que simbolizan un nuevo comienzo.</p>
+                    <p class="card-text">Un detalle para celebrar el esfuerzo y los sueños cumplidos. Flores que
+                        simbolizan un nuevo comienzo.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card">
                 <img src="https://placehold.co/300x300?text=Ramos" class="card-img-top card-img" alt="Ramos de Flores">
                 <div class="card-body">
                     <h5 class="card-title">Romance en pétalos</h5>
-                    <p class="card-text">Pequeños gestos que se sienten enormes. Flores para sorprender, enamorar y encender mariposas en el corazón.</p>
+                    <p class="card-text">Pequeños gestos que se sienten enormes. Flores para sorprender, enamorar y
+                        encender mariposas en el corazón.</p>
                     <a href="./pages/productos.html" class="btn btn-primary">Ver Ramos</a>
                 </div>
             </div>
         </section>
         <div class="ComprasBoton">
-                <a  class="botonPedido" href="./pages/hacerMiPedido.html" >Haz tu pedido ahora</a>
-                <p>Entrega Express en menos de 24 horas.</p>
+            <a class="botonPedido" href="./pages/hacerMiPedido.html">Haz tu pedido ahora</a>
+            <p>Entrega Express en menos de 24 horas.</p>
         </div>
         <section class="ubicacion">
             <h2 class="ubicacionTitle">Ubicación</h2>
-            <img class="icon"src="./assets/mapas-de-google.png" alt="Icono de Mapa" >
+            <img class="icon" src="./assets/mapas-de-google.png" alt="Icono de Mapa">
             <p>R. Escalada de San Martín 2021, M5500 Mendoza.</p>
         </section>
     </main>

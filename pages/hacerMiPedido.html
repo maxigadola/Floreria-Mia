@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Florería Mia</title>
 </head>
+
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg  miNav">
-            <div class="container-fluid">
-                <a class="navbar-brand logoNav" href="../index.html"><img src="../assets/logo floreria.png" class="img-Logo" alt="logo de Floreria"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid minav">
+                <a class="navbar-brand" href="../index.html"><img src="./assets/logo_floreria.png" class="img-logo"
+                        alt="Logo de la Floreria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse containerNav colorNav " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link  pagesNav" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link pagesNav" href="./contactos.html">Contactos</a>
-                        <a class="nav-link pagesNav" href="./quienesSomos.html">Quienes Somos</a>
-                        <a class="nav-link pagesNav" href="./productos.html">Productos</a>
-                        <a class="nav-link pagesNav active" href="#">Hacer Mi Pedido</a>
-                    </div>
+                <div class="collapse navbar-collapse navbar-propia" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="page" href="#">Hacer Mi Pedido</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -31,11 +46,11 @@
         <section class="inicioHacerMiPedido">
             <h1>Tu Ramo Ideal, Preparado Con Amor</h1>
             <p>Hacé tu pedido de flores en minutos</p>
-            <img src="https://placehold.co/900x300?text=imagenDeFondo"alt="imagenDeFondo">
+            <img src="https://placehold.co/900x300?text=imagenDeFondo" alt="imagenDeFondo">
         </section>
         <section class="DetallesDelPedido">
             <h2>Detalles del Pedido</h2>
-            <form class="formPedido" action="/submit" method="post" >
+            <form class="formPedido" action="/submit" method="post">
                 <label for="nombreCliente">Nombre y Apellido</label>
                 <input type="text" name="Nombre" id="nombreCliente">
                 <label for="telefono">Telefono</label>
@@ -49,7 +64,8 @@
                     <option value="tarjeta">Tarjeta de Débito o Crédito</option>
                 </select>
                 <label for="mensajeEspecial">Contanos la ocasión o el mensaje que querés incluir.</label>
-                <textarea name="mensaje" id="mensajeEspecial" placeholder="Deja tu mensaje y nosotros nos encargamos del resto.">
+                <textarea name="mensaje" id="mensajeEspecial"
+                    placeholder="Deja tu mensaje y nosotros nos encargamos del resto.">
                 </textarea>
                 <input type="submit" value="Hacer Mi pedido">
             </form>
@@ -60,6 +76,9 @@
         <img src="../assets/logo floreria.png" class="img-Logo" alt="Logo Floreria Mia">
         <p class="p-copyright">© Copyright 2025. Todos los Derechos Reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
