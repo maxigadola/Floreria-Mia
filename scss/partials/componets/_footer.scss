@@ -1,0 +1,21 @@
+@use'../componets/icon';
+footer{
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7A8B8;
+    border-top: 1px solid #121212;
+    .copyright-logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}

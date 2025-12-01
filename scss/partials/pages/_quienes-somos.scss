@@ -1,0 +1,25 @@
+@use '../componets/home-page';
+@use'../componets/polaroid-img';
+.quienesSomos{
+    .homePage{
+        --bg-img: url('../../../assets/floreria_mia.png');
+        background-size: auto 100%;
+        background-position:center;
+        height: 700px;
+        h1{
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            background-color: rgba(77, 95, 110, 0.543);
+        }
+        h3{
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            font-weight: 600;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            background-color: rgba(77, 95, 110, 0.543);
+        }
+        &::before {
+        background: none;
+    }
+    }
+}

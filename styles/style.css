@@ -1,8 +1,149 @@
+/* fonts Lora*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "DM Sans", sans-serif; */
+/* font Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+/* font-family: "Playfair Display", serif; */
+h2 {
+  color: rgba(255, 120, 165, 0.8588235294);
+  text-align: center;
+  font-size: 40px;
+}
+
+h1, h2, p {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botonPedido {
+  display: inline-block;
+  background-color: #6558f5;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.homePage {
+  --bg-img: url("imagen.png");
+  background-image: var(--bg-img);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.homePage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.514);
+  z-index: 1;
+}
+.homePage * {
+  position: relative;
+  z-index: 2;
+}
+.homePage h1 {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 600;
+  color: #f92280;
+}
+.homePage h3 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #c71864;
+}
+
+.homePage {
+  --bg-img: url("https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+h2 {
+  margin: 30px;
+  padding: 30px;
+}
+
+.realizar-pedido {
+  text-align: center;
+  margin: 30px;
+}
+.realizar-pedido h3 {
+  color: rgba(254, 8, 90, 0.8588235294);
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.realizar-pedido p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.ubicacion {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ubicacion .icon {
+  margin: 0;
+}
+.ubicacion h2 {
+  color: rgba(254, 8, 90, 0.8588235294);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.ubicacion .map-ubicacion {
+  border-radius: 6px;
+  width: 600px;
+  height: 450px;
+  border: none;
+  margin: 25px;
+}
+.ubicacion p {
+  margin-bottom: 50px;
+}
+.ubicacion p a {
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 550px) {
+  .homePage {
+    height: 300px;
+  }
+  .homePage h1 {
+    font-size: 40px;
+  }
+  .homePage h3 {
+    font-size: 25px;
+  }
+}
 @media (min-width: 992px) {
   header {
     padding: 0;
@@ -46,6 +187,235 @@ header nav .minav div ul li .active {
 }
 header nav .minav div ul li .active:hover {
   color: #9f46ff;
+}
+
+.catalogo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.card-producto {
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(to bottom, #ff578f 15%, #ffffff 100%);
+  margin: 30px 30px;
+  width: 20rem;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-producto .img-card {
+  border: none;
+  border-radius: 18px 18px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-producto .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 0 0 5% 5%;
+  padding: 15px;
+}
+.card-producto .card-info .card-title {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  font-weight: 700;
+}
+.card-producto .card-info .card-text {
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.card-producto .card-info .btn-card {
+  background-color: #ff578f;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 22px;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.cards-producto {
+  border-radius: 25px;
+  border: 3px solid #ffffff;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 1800px) {
+  .cards-producto .cards-producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+footer {
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7A8B8;
+  border-top: 1px solid #121212;
+}
+footer .copyright-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright-logo p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.productos .homePage {
+  --bg-img: url('https://cdn.pixabay.com/photo/2017/10/15/15/58/spring-2854205_1280.jpg');
+}
+.productos .homePage h1 {
+  font-size: 70px;
+}
+.productos .catalogo {
+  background: url(../../../assets/fondo_madera.png);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1800px) {
+  .productos .catalogo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.productos .catalogo .cards-producto h2 {
+  font-weight: 700;
+  color: white;
+}
+.productos .catalogo .cards-producto .card-producto a .img-card {
+  height: 35rem;
+  border-radius: 18px;
+}
+
+.polaroid {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px 12px 44px 12px;
+  border-radius: 6px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+  transform: rotate(-2deg);
+  transition: transform 240ms ease, box-shadow 240ms ease;
+  margin: 18px;
+  text-align: center;
+  width: 260px;
+  user-select: none;
+}
+.polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  object-fit: cover;
+  -webkit-user-drag: none;
+}
+.polaroid figcaption {
+  margin-top: 10px;
+  color: #333;
+  font: 0.95rem/1.2 "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+.polaroid:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 0 22px 34px rgba(0, 0, 0, 0.28);
+  cursor: default;
+}
+.polaroid:nth-child(4n) {
+  transform: rotate(3deg);
+}
+.polaroid:nth-child(4n+1) {
+  transform: rotate(-3deg);
+}
+.polaroid:nth-child(4n+2) {
+  transform: rotate(1.5deg);
+}
+.polaroid:nth-child(4n+3) {
+  transform: rotate(-1.5deg);
+}
+.polaroid.small {
+  width: 180px;
+  padding-bottom: 40px;
+}
+.polaroid.medium {
+  width: 260px;
+  padding-bottom: 44px;
+}
+.polaroid.large {
+  width: 360px;
+  padding-bottom: 56px;
+}
+
+@media (max-width: 520px) {
+  .polaroid {
+    width: calc(100% - 40px);
+    margin: 12px 20px;
+  }
+}
+.polaroid:focus-within {
+  outline: 3px solid rgba(100, 150, 250, 0.18);
+  outline-offset: 6px;
+}
+
+@media print {
+  .polaroid {
+    transform: none !important;
+    box-shadow: none !important;
+    margin: 6px;
+    width: auto;
+  }
+}
+.quienesSomos .homePage {
+  --bg-img: url('../../../assets/floreria_mia.png');
+  background-size: auto 100%;
+  background-position: center;
+  height: 700px;
+}
+.quienesSomos .homePage h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(77, 95, 110, 0.543);
+}
+.quienesSomos .homePage h3 {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 600;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(77, 95, 110, 0.543);
+}
+.quienesSomos .homePage::before {
+  background: none;
 }
 
 /*# sourceMappingURL=style.css.map */

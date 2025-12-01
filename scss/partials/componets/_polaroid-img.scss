@@ -1,0 +1,102 @@
+// Variables
+$polaroid-bg: #ffffff;
+$polaroid-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+$polaroid-shadow-hover: 0 22px 34px rgba(0, 0, 0, 0.28);
+$polaroid-border-radius: 6px;
+$polaroid-padding-bottom: 44px;
+$polaroid-caption-color: #333;
+$polaroid-caption-font: 0.95rem/1.2 "Helvetica Neue", Arial, sans-serif;
+$polaroid-rotate-deg: -2deg;
+
+.polaroid {
+    display: inline-block;
+    background: $polaroid-bg;
+    padding: 12px 12px $polaroid-padding-bottom 12px;
+    border-radius: $polaroid-border-radius;
+    box-shadow: $polaroid-shadow;
+    transform: rotate($polaroid-rotate-deg);
+    transition: transform 240ms ease, box-shadow 240ms ease;
+    margin: 18px;
+    text-align: center;
+    width: 260px;
+    user-select: none;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+        object-fit: cover;
+        -webkit-user-drag: none;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        color: $polaroid-caption-color;
+        font: $polaroid-caption-font;
+        letter-spacing: 0.2px;
+    }
+
+    &:hover {
+        transform: rotate(0deg) translateY(-6px);
+        box-shadow: $polaroid-shadow-hover;
+        cursor: default;
+    }
+
+    // Variaciones pequeñas de rotación si se usan varias
+    &:nth-child(4n) {
+        transform: rotate(3deg);
+    }
+
+    &:nth-child(4n + 1) {
+        transform: rotate(-3deg);
+    }
+
+    &:nth-child(4n + 2) {
+        transform: rotate(1.5deg);
+    }
+
+    &:nth-child(4n + 3) {
+        transform: rotate(-1.5deg);
+    }
+
+    // Tamaños
+    &.small {
+        width: 180px;
+        padding-bottom: 40px;
+    }
+
+    &.medium {
+        width: 260px;
+        padding-bottom: 44px;
+    }
+
+    &.large {
+        width: 360px;
+        padding-bottom: 56px;
+    }
+}
+
+// Mobile
+@media (max-width: 520px) {
+    .polaroid {
+        width: calc(100% - 40px);
+        margin: 12px 20px;
+    }
+}
+
+// Foco accesible
+.polaroid:focus-within {
+    outline: 3px solid rgba(100, 150, 250, 0.18);
+    outline-offset: 6px;
+}
+
+// Impresión
+@media print {
+    .polaroid {
+        transform: none !important;
+        box-shadow: none !important;
+        margin: 6px;
+        width: auto;
+    }
+}
