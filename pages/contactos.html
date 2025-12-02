@@ -43,7 +43,7 @@
         </nav>
     </header>
     <main>
-        <section class="Infocontactos">
+        <section class="infoContactos">
             <div class="contacto-contenedor">
                 <div class="columna-contactos">
                     <h1>Contactos</h1>
@@ -71,40 +71,51 @@
                         <p class="datosContactos">2612413830</p>
                     </div>
                 </div>
-                <div class=".columna-imagen">
-                    <img class="img-contactos-decoracion" src="../assets/florBlanca.jpeg" alt="imgFlores">
-                </div>
+                <div class="columna-img homePage"></div>
             </div>
             <section class="ubicacion">
-                <h2 class="ubicacionTitle">Ubicación</h2>
-                <img class="icon" src="../assets/mapas-de-google.png" alt="iconoDeUbicacion">
-                <img src="https://placehold.co/350x350?text=Maps" alt="UbicacionMapa">
-                <a href="https://www.google.com/maps">R.Escalada de San Martín 2021,M5500,Mendoza.</a>
+                <div class="contacto-contenedor">
+                    <div class="columna-contactos">
+                        <h2 class="ubicacionTitle">Ubicación</h2>
+                        <img class="icon" src="../assets/mapas-de-google.png" alt="iconoDeUbicacion">
+                    </div>
+
+                    <div class="columna-img">
+                        <img src="https://placehold.co/350x350?text=Maps" alt="UbicacionMapa">
+                        <a href="https://www.google.com/maps">R.Escalada de San Martín 2021,M5500,Mendoza.</a>
+                    </div>
+
+                </div>
+
             </section>
         </section>
-        <form class="form-consultas" action="/sumbit" method="post">
-            <h2>Consultas</h2>
-            <div class="ConteinerDatos">
-                <label class="label-contacto" for="nombreConsulta">Nombre</label>
-                <input type="text" name="nombre" id="nombreConsulta">
-            </div>
-            <div class="ConteinerDatos">
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="ConteinerDatos">
-                <label for="ConsultaDelCliente">Consulta</label>
-                <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
-            </div>
-            <input class="botonPedido" type="submit" value="Enviar Consulta">
-
-        </form>
-        </section>
+        <h2>Consultas</h2>
+        <div class="container_form">
+            <form action="/sumbit" method="post">
+                <div class="container-input">
+                    <label class="label-contacto" for="nombreConsulta">Nombre</label>
+                    <input type="text" name="nombre" id="nombreConsulta">
+                </div>
+                <div class="container-input">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="container-input">
+                    <label for="ConsultaDelCliente">Consulta</label>
+                    <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
+                </div>
+                <div class="boton-centro">
+                    <input class="botonPedido" type="submit" value="Enviar Consulta">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <!-- logo -->
-        <img src="../assets/logo floreria.png" class="img-Logo" alt="Logo Floreria Mia">
-        <p class="p-copyright">© Copyright 2025. Todos los Derechos Reservados.</p>
+        <div class="copyright-logo">
+            <img class="icon" src="../assets/logo_floreria.png" alt="Logo Floreria Mia">
+            <p>© Copyright 2025. Todos los Derechos Reservados.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

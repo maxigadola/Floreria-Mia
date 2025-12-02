@@ -1,0 +1,31 @@
+.contacto-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .columna-contactos{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin:30px 30px 30px 60px;
+        width: 300px;
+        .ConteinerDatos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .columna-img{
+        padding: 40px;
+        width: 600px;
+        height: 500px;
+        margin: 10px;
+        border:0.5px solid beige;
+        
+    }
+}

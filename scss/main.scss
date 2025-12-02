@@ -2,10 +2,14 @@
 @use './partials/base/reset';
 @use './partials/base/tipografia';
 //COMPONENTS
-@use './partials/pages/index.scss';
 @use './partials/componets/header.scss';
 @use './partials/componets/catalogo';
 @use './partials/componets/card.scss';
 @use './partials/componets/footer';
+@use './partials/componets/forms';
+//pages
+@use './partials/pages/index.scss';
+@use'./partials/pages/hacerMiPedido';
 @use'./partials/pages/producto';
 @use'./partials/pages/quienes-somos';
+@use'./partials/pages/contactos';
