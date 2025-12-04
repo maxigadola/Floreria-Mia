@@ -60,9 +60,11 @@ h2 {
         }
     }
 }
-@media (max-width:550px){
+@media (max-width:600px){
     .homePage{
-        height: 300px;
+        background-size:contain;
+    background-position:top;
+    height: auto;
         h1{
             font-size: 40px;
         }
@@ -70,5 +72,17 @@ h2 {
             font-size: 25px;
         }
     }
+    h2{
+        font-size: 30px;
+    }
+    .ubicacion{
+    .map-ubicacion{
+        border-radius: 6px;
+        width: 100%;
+        padding: 20px;
+        height: 300px;
+        border:none;
+        margin:25px;
+    }}
     
 }

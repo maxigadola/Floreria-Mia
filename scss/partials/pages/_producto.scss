@@ -1,38 +1,68 @@
 @use'../componets/home-page';
 @use'../base/tipografia';
+
 .productos {
-    
+    width: 100%;
+
     .homePage {
         --bg-img: url('https://cdn.pixabay.com/photo/2017/10/15/15/58/spring-2854205_1280.jpg');
-
-        h1 {
-            font-size: 70px;
-        }
     }
 
     .catalogo {
-        background: url(../../../assets/fondo_madera.png);
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        @media (max-width:1800px){
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .productos {
+            width: 100%;
+        max-width: 1200px;  
+        padding: 20px;
             display: flex;
-            justify-content: space-around;
-        }
-        .cards-producto {
-            h2{
-                font-weight: 700;
-                color:white;
-            }
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            flex-wrap: wrap;
             .card-producto {
-                a {
-                    .img-card {
-                        height: 35rem;
-                        border-radius: 18px;
-                    }      
+                height: 400px;
+                width: 280px;
+                background: none;
+                padding: 20px 20px 15px 15px;
+                border-radius: 2px;
+                margin:0;
+                background: linear-gradient(275deg, #ffd6c9, #f4a9c3);
+                border: 5px solid #ffffff;
+
+                h2 {
+                    color: #ffffff;
+
                 }
-            }   
+
+                a {
+                    text-decoration: none;
+
+                    h5 {
+                        text-align: center;
+                        padding: 12px;
+                        display: flex;
+                        font-weight: 700;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        background: linear-gradient(135deg, #b9dbfb, #ff9cbf);
+                        border-radius: 0 0 18px 18px;
+                    }
+
+                    .img-card {
+                        object-fit: cover;
+                        object-position: center;
+                        height: 300px;
+                        padding: 0;
+                        margin: 0;
+
+                    }
+                }
+            }
         }
     }
 }

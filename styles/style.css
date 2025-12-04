@@ -299,6 +299,16 @@ form .boton-centro {
   font-weight: 600;
   color: #c71864;
 }
+@media (max-width: 600px) {
+  .homePage .homePage h1 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .homePage .homePage h3 {
+    font-size: 15px;
+  }
+}
 
 .homePage {
   --bg-img: url("https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -356,15 +366,28 @@ h2 {
   color: black;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .homePage {
-    height: 300px;
+    background-size: contain;
+    background-position: top;
+    height: auto;
   }
   .homePage h1 {
     font-size: 40px;
   }
   .homePage h3 {
     font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .ubicacion .map-ubicacion {
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+    height: 300px;
+    border: none;
+    margin: 25px;
   }
 }
 .hacermiPedido {
@@ -399,32 +422,61 @@ h2 {
   margin-top: 0;
 }
 
+.productos {
+  width: 100%;
+}
 .productos .homePage {
   --bg-img: url('https://cdn.pixabay.com/photo/2017/10/15/15/58/spring-2854205_1280.jpg');
 }
-.productos .homePage h1 {
-  font-size: 70px;
-}
 .productos .catalogo {
-  background: url(../../../assets/fondo_madera.png);
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1800px) {
-  .productos .catalogo {
-    display: flex;
-    justify-content: space-around;
-  }
+.productos .catalogo .productos {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.productos .catalogo .cards-producto h2 {
+.productos .catalogo .productos .card-producto {
+  height: 400px;
+  width: 280px;
+  background: none;
+  padding: 20px 20px 15px 15px;
+  border-radius: 2px;
+  margin: 0;
+  background: linear-gradient(275deg, #ffd6c9, #f4a9c3);
+  border: 5px solid #ffffff;
+}
+.productos .catalogo .productos .card-producto h2 {
+  color: #ffffff;
+}
+.productos .catalogo .productos .card-producto a {
+  text-decoration: none;
+}
+.productos .catalogo .productos .card-producto a h5 {
+  text-align: center;
+  padding: 12px;
+  display: flex;
   font-weight: 700;
-  color: white;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #b9dbfb, #ff9cbf);
+  border-radius: 0 0 18px 18px;
 }
-.productos .catalogo .cards-producto .card-producto a .img-card {
-  height: 35rem;
-  border-radius: 18px;
+.productos .catalogo .productos .card-producto a .img-card {
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  padding: 0;
+  margin: 0;
 }
 
 .polaroid {
