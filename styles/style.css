@@ -445,10 +445,10 @@ h2 {
   flex-wrap: wrap;
 }
 .productos .catalogo .productos .card-producto {
-  height: 400px;
+  height: auto;
   width: 280px;
   background: none;
-  padding: 20px 20px 15px 15px;
+  padding: 20px;
   border-radius: 2px;
   margin: 0;
   background: linear-gradient(275deg, #ffd6c9, #f4a9c3);
