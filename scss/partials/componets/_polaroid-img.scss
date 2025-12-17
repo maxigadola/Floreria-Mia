@@ -60,21 +60,6 @@ $polaroid-rotate-deg: -2deg;
         transform: rotate(-1.5deg);
     }
 
-    // Tamaños
-    &.small {
-        width: 180px;
-        padding-bottom: 40px;
-    }
-
-    &.medium {
-        width: 260px;
-        padding-bottom: 44px;
-    }
-
-    &.large {
-        width: 360px;
-        padding-bottom: 56px;
-    }
 }
 
 // Mobile

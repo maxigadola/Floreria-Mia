@@ -52,13 +52,17 @@ header nav .minav a .img-logo {
   width: 50px;
 }
 header nav .minav div ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
   color: white;
 }
 header nav .minav div ul li a:hover {
   color: #9f46ff;
 }
 header nav .minav div ul li .active {
-  color: white !important;
+  color: rgb(252, 252, 252) !important;
+  text-shadow: 0px 2px 4px #9f46ff;
 }
 header nav .minav div ul li .active:hover {
   color: #9f46ff;
@@ -182,6 +186,7 @@ footer .copyright-logo p {
   font-weight: 600;
   border: none;
   text-decoration: none;
+  margin: 25px;
 }
 
 .container-form {
@@ -266,19 +271,16 @@ form .boton-centro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
+  min-height: 100vh;
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .homePage::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(255, 255, 255, 0.514);
   z-index: 1;
 }
@@ -293,20 +295,21 @@ form .boton-centro {
   color: #f92280;
 }
 .homePage h3 {
-  margin-top: 15px;
+  margin: 15px;
+  padding: 20px;
   text-align: center;
   font-size: 30px;
   font-weight: 600;
   color: #c71864;
 }
-@media (max-width: 600px) {
-  .homePage .homePage h1 {
-    font-size: 25px;
+@media (max-width: 800px) {
+  .homePage h1 {
+    font-size: 48px;
     padding: 10px;
-    text-align: center;
   }
-  .homePage .homePage h3 {
-    font-size: 15px;
+  .homePage h3 {
+    font-size: 22px;
+    margin-bottom: 40px;
   }
 }
 
@@ -315,21 +318,35 @@ form .boton-centro {
 }
 
 h2 {
-  margin: 30px;
-  padding: 30px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.horarios {
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.horarios li {
+  font-size: 25px;
 }
 
 .realizar-pedido {
   text-align: center;
   margin: 30px;
 }
-.realizar-pedido h3 {
-  color: rgba(254, 8, 90, 0.8588235294);
-  font-size: 50px;
-  font-style: italic;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
 .realizar-pedido p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 25px;
+  padding: 5px;
+}
+
+p {
+  text-align: center;
   font-size: 25px;
   padding: 10px;
 }
@@ -345,14 +362,13 @@ h2 {
   margin: 0;
 }
 .ubicacion h2 {
-  color: rgba(254, 8, 90, 0.8588235294);
   font-weight: 700;
   margin-bottom: 5px;
 }
 .ubicacion .map-ubicacion {
   border-radius: 6px;
-  width: 600px;
-  height: 450px;
+  width: 800px;
+  height: 600px;
   border: none;
   margin: 25px;
 }
@@ -366,12 +382,7 @@ h2 {
   color: black;
 }
 
-@media (max-width: 600px) {
-  .homePage {
-    background-size: contain;
-    background-position: top;
-    height: auto;
-  }
+@media (max-width: 800px) {
   .homePage h1 {
     font-size: 40px;
   }
@@ -383,7 +394,8 @@ h2 {
   }
   .ubicacion .map-ubicacion {
     border-radius: 6px;
-    width: 100%;
+    width: 75%;
+    margin: 0 20px;
     padding: 20px;
     height: 300px;
     border: none;
@@ -433,6 +445,35 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.productos .catalogo h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.productos .catalogo h4 {
+  text-align: center;
+  padding: 10px;
+  margin: 0 20px;
+}
+.productos .catalogo .catalogoIndicaciones {
+  align-items: center;
+  margin: 0 20px;
+}
+.productos .catalogo .catalogoIndicaciones li {
+  padding: 20px;
+  font-size: 20px;
+}
+.productos .catalogo .botonesCentrado {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .productos .catalogo .botonesCentrado {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 .productos .catalogo .productos {
   width: 100%;
@@ -523,18 +564,6 @@ h2 {
 .polaroid:nth-child(4n+3) {
   transform: rotate(-1.5deg);
 }
-.polaroid.small {
-  width: 180px;
-  padding-bottom: 40px;
-}
-.polaroid.medium {
-  width: 260px;
-  padding-bottom: 44px;
-}
-.polaroid.large {
-  width: 360px;
-  padding-bottom: 56px;
-}
 
 @media (max-width: 520px) {
   .polaroid {
@@ -555,26 +584,67 @@ h2 {
     width: auto;
   }
 }
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .quienesSomos .homePage {
   --bg-img: url('../../../assets/floreria_mia.png');
-  background-size: auto 100%;
-  background-position: center;
-  height: 700px;
 }
-.quienesSomos .homePage h1 {
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(77, 95, 110, 0.543);
+@media (max-width: 800px) {
+  .quienesSomos .homePage {
+    --bg-img: url('../../../assets/floreria_mia_mobile.png');
+  }
 }
 .quienesSomos .homePage h3 {
-  color: rgb(255, 255, 255);
   font-size: 35px;
-  font-weight: 600;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(77, 95, 110, 0.543);
+}
+.quienesSomos .homePage .title-principal {
+  font-size: 50px;
+}
+.quienesSomos .homePage h1,
+.quienesSomos .homePage h3 {
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 4px rgb(25, 25, 25);
+  background-color: rgba(77, 95, 110, 0.387);
 }
 .quienesSomos .homePage::before {
   background: none;
+}
+.quienesSomos .title-principal {
+  color: white;
+  border-radius: 15px 0 15px 0;
+  background-color: rgb(185, 102, 200);
+  margin-bottom: 0;
+}
+.quienesSomos .article-historia {
+  margin: 10px 20px;
+  padding: 30px;
+}
+.quienesSomos .article-historia h2 {
+  font-style: italic;
+  text-shadow: 0px 2px 4px rgba(34, 33, 34, 0.399);
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+.quienesSomos .article-historia p {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 2px 4px rgb(41, 38, 42);
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: rgba(253, 130, 171, 0.8588235294);
+  border-radius: 0 15px 0 15px;
+}
+.quienesSomos section p {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0 25px;
 }
 
 .contacto-contenedor {
