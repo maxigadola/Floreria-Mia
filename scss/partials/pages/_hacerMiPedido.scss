@@ -18,12 +18,21 @@
             background: #ae5afc7f;
     }
     }
-    h2{
-        padding-bottom: 0;
-        margin-bottom: 0;
+    .DetallesDelPedido{
+        h2{
+        padding: 20px;
+        margin:5px;
         text-align: center;
+        }
+        @media (max-width:400px){
+            
+            h2{
+                margin: 5px;
+                padding: 0px;
+                font-size: 25px;
+            }
+        }
     }
-    form{
-        margin-top: 0;
-    }
+    
+    
 }

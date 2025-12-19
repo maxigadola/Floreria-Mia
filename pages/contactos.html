@@ -7,7 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
-    <title>Florería Mia</title>
+    <link rel="icon" href="../assets/favicon.ico">
+    <!-- animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Florería Mia-Contactos</title>
+    <meta name="description" content="¿Querés sorprender con flores frescas? Estamos aquí para ayudarte. Podés llamarnos, escribirnos o visitarnos en nuestra florería en Mendoza. Completa el formulario y te responderemos a la brevedad."> 
+</head>
 </head>
 
 <body>
@@ -26,16 +33,16 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Contactos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
+                            <a class="nav-link" aria-disabled="page" href="./hacerMiPedido.html">Hacer Mi Pedido</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-disabled="page" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-disabled="page" href="./hacerMiPedido.html">Hacer Mi Pedido</a>
+                            <a class="nav-link active" href="#">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesSomos.html">Quienes Somos</a>
                         </li>
                     </ul>
                 </div>
@@ -43,72 +50,72 @@
         </nav>
     </header>
     <main>
+        <!-- ESTOS CONTACTOS SON A MODO DE EJEMPLO NO LLEVAN A NINGUN SITIO WEB  -->
         <section class="infoContactos">
-            <div class="contacto-contenedor">
-                <div class="columna-contactos">
-                    <h1>Contactos</h1>
-                    <div class="ConteinerDatos">
-                        <img class="icon"
-                            src="https://images.icon-icons.com/840/PNG/512/Whatsapp_icon-icons.com_66931.png"
-                            alt="logoWhatsApp">
-                        <p class="datosContactos">+54261343678</p>
-                    </div>
-                    <div class="ConteinerDatos">
-                        <img class="icon"
-                            src="https://images.icon-icons.com/836/PNG/512/Instagram_icon-icons.com_66804.png"
-                            alt="logoInstagram">
-                        <p class="datosContactos">@floreriaMia</p>
-                    </div>
-                    <div class="ConteinerDatos">
-                        <img class="icon" src="https://images.icon-icons.com/2429/PNG/512/facebook_logo_icon_147291.png"
-                            alt="logoFacebook">
-                        <p class="datosContactos">floreria Mia</p>
-                    </div>
-                    <div class="ConteinerDatos">
-                        <img class="icon"
-                            src="https://images.icon-icons.com/1130/PNG/512/calltelephoneauricularincircularbutton_80086.png"
-                            alt="logoLlamada">
-                        <p class="datosContactos">2612413830</p>
-                    </div>
+            <div class="contactos-grid">
+                <h1 class="title-grid centrarFila">Contactos</h1>
+                <div class="fila-1 centrarFila">
+                    <img class="icon-contacto" src="https://images.icon-icons.com/373/PNG/256/Whatsapp_37229.png"
+                        alt="logoWhatsApp">
+                    <a class="enlace-contacto" href="">261343678</a>
                 </div>
-                <div class="columna-img homePage"></div>
+                <div class="fila-2 centrarFila">
+                    <img class="icon-contacto"
+                        src="https://images.icon-icons.com/836/PNG/512/Instagram_icon-icons.com_66804.png"
+                        alt="logoInstagram">
+                    <a class="enlace-contacto" href="">@floreriaMia</a>
+                </div>
+                <div class="fila-3 centrarFila">
+                    <img class="icon-contacto"
+                        src="https://images.icon-icons.com/2429/PNG/512/facebook_logo_icon_147291.png"
+                        alt="logoFacebook">
+                    <a class="enlace-contacto" href="">floreria Mia</a>
+                </div>
+                <div class="fila-4 centrarFila">
+                    <img class="icon-contacto"
+                        src="https://images.icon-icons.com/1130/PNG/512/calltelephoneauricularincircularbutton_80086.png"
+                        alt="logoLlamada">
+                    <a class="enlace-contacto" href="">2612413830</a>
+                </div>
+                <div class="imagen-grid">
+                    <img  src="../assets/contactos-img.webp" alt="Mujer llamando por telefono">
+                </div>
             </div>
             <section class="ubicacion">
-                <div class="contacto-contenedor">
-                    <div class="columna-contactos">
-                        <h2 class="ubicacionTitle">Ubicación</h2>
-                        <img class="icon" src="../assets/mapas-de-google.png" alt="iconoDeUbicacion">
-                    </div>
-
-                    <div class="columna-img">
-                        <img src="https://placehold.co/350x350?text=Maps" alt="UbicacionMapa">
-                        <a href="https://www.google.com/maps">R.Escalada de San Martín 2021,M5500,Mendoza.</a>
-                    </div>
-
+                <div class="title-Icon">
+                    <h2 class="ubicacionTitle">Ubicación</h2>
+                    <img class="icon icon-grid" src="../assets/mapas-de-google.webp" alt="iconoDeUbicacion">
                 </div>
-
+                <p class="subtitulo-grid">Visitanos en nuestro local en el paseo alameda</p>
+                <div class="contenedor-map">
+                    <iframe class="map-ubicacion"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d516.4018848785006!2d-68.83627130951382!3d-32.87972491528613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09005c228d61%3A0x61cfff3821167590!2sFloreria%20Mia!5e0!3m2!1ses-419!2sar!4v1765209852946!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <a class="direccion-map" href="https://maps.app.goo.gl/xTThiUXV9Aa1ffgh8">R. Escalada de San Martín
+                    2021, M5500 Mendoza.</a>
+            </section>
+            <section class="container-form">
+                <h2>Consultas</h2>
+                <form class="formPedido" action="/sumbit" method="post">
+                    <div class="container-input">
+                        <label  for="nombreConsulta">Nombre</label>
+                        <input type="text" name="nombre" id="nombreConsulta">
+                    </div>
+                    <div class="container-input">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="container-input">
+                        <label for="ConsultaDelCliente">Consulta</label>
+                        <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
+                    </div>
+                    <div class="boton-centro">
+                        <input class="botonPedido" type="submit" value="Enviar Consulta">
+                    </div>
+                </form>
             </section>
         </section>
-        <h2>Consultas</h2>
-        <div class="container_form">
-            <form action="/sumbit" method="post">
-                <div class="container-input">
-                    <label class="label-contacto" for="nombreConsulta">Nombre</label>
-                    <input type="text" name="nombre" id="nombreConsulta">
-                </div>
-                <div class="container-input">
-                    <label for="email">Correo Electronico</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="container-input">
-                    <label for="ConsultaDelCliente">Consulta</label>
-                    <textarea name="ConsultaCliente" id="ConsultaDelCliente"></textarea>
-                </div>
-                <div class="boton-centro">
-                    <input class="botonPedido" type="submit" value="Enviar Consulta">
-                </div>
-            </form>
-        </div>
     </main>
     <footer>
         <!-- logo -->
