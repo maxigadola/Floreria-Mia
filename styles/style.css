@@ -40,7 +40,7 @@ header nav {
   padding: 0 !important;
 }
 header nav .minav {
-  background-color: rgba(254, 8, 90, 0.8588235294) !important;
+  background-color: white !important;
 }
 header nav .minav a {
   align-items: center;
